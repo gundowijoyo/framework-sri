@@ -9,7 +9,10 @@
 
     scripts.forEach(function(src) {
         var script = document.createElement('script');
-        script.src = src;
+        script.src = src; 
+        if(!script.src){
         document.head.appendChild(script);
-    });
+        }else{
+        }
+        });
 })();
